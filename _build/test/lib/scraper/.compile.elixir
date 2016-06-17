@@ -1,0 +1,13 @@
+v2.
+{<<"_build/test/lib/scraper/ebin/Elixir.Scraper.Supervisor.beam">>,
+ 'Elixir.Scraper.Supervisor',module,<<"lib/supervisor.ex">>,
+ ['Elixir.Module','Elixir.Supervisor.Spec','Elixir.Kernel',
+  'Elixir.Supervisor'],
+ ['Elixir.Scraper'],
+ [],nil}.
+{<<"_build/test/lib/scraper/ebin/Elixir.Scraper.beam">>,'Elixir.Scraper',
+ module,<<"lib/scraper.ex">>,
+ ['Elixir.HTTPoison.Response','Elixir.GenServer','Elixir.Module',
+  'Elixir.Kernel'],
+ ['Elixir.HTTPoison',erlang,'Elixir.Floki','Elixir.IO','Elixir.Enum'],
+ [],nil}.
