@@ -1,20 +1,29 @@
-# ScraperOTP
+# TP4 Scraper OTP+Supervisión en Elixir
 
-**TODO: Add description**
+## Scraper
 
-## Installation
+Para instalar dependencias y levantar una consola interactiva:
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+```
+$ cd scraper
+$ mix deps.get
+$ iex -S mix
+```
 
-  1. Add scraperOTP to your list of dependencies in `mix.exs`:
+Utiliza mismo server nodejs de:
+https://github.com/arquitecturas-concurrentes/iasc-supervision-elixir-scraper/tree/master/content_server
 
-        def deps do
-          [{:scraperOTP, "~> 0.0.1"}]
-        end
+Para probar los test: mix test
 
-  2. Ensure scraperOTP is started before your application:
+Una vez en la consola se debe levantar el supevisor y ya estamos listos para hacer pedidos:
 
-        def application do
-          [applications: [:scraperOTP]]
-        end
+```
+> Scraper.Supervisor.start_link
+> {:ok, titles} = Scraper.titles "http://localhost:3000/foo"
+```
 
+Si se quieren observar los procesor ejecutando en la Erlang VIM:
+
+```
+> :observer.start()
+```
